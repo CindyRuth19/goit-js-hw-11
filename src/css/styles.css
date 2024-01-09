@@ -41,10 +41,61 @@ img {
   background-color: #1565c0;
 }
 
+.search-form {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+
+  overflow: hidden;
+
+  width: 400px;
+  padding: 25px auto;
+  height: 50px;
+  background-color: #fafafa;
+  border-radius: 30px;
+}
+
+.search-form:hover,
+.search-form:focus {
+  outline: solid 1px;
+  outline-color: rgb(7, 181, 250);
+}
+
 .search-form-input {
-  padding-left: 15px;
+  flex-grow: 1;
+  padding-left: 20px;
+
   border: none;
   outline: none;
+  height: 30px;
+  border-radius: 30px;
+
+  background-color: #fafafa;
+
+  font-size: 18px;
+}
+
+.search-form__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-form__btn:hover,
+.search-form__btn:focus {
+  background-color: rgb(211, 211, 211);
+  /* filter: invert(1); */
+  /* filter: blur(2px); TODO: */
 }
 
 /* Gallery */
