@@ -76,16 +76,22 @@ img {
   font-size: 18px;
 }
 
+button {
+  border: none;
+  background-color: #fafafa;
+}
+
 .search-form__btn {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 0;
+  padding-top: 20px;
+  padding-left: -5px;
+  bottom: -20px;
   height: 50px;
   width: 50px;
-  border: none;
-  outline: none;
+  border-radius: 50%;
 
   cursor: pointer;
   transition: background-color 0.2s;
@@ -93,7 +99,7 @@ img {
 
 .search-form__btn:hover,
 .search-form__btn:focus {
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(241, 239, 239);
   /* filter: invert(1); */
   /* filter: blur(2px); TODO: */
 }
